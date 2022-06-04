@@ -1,0 +1,18 @@
+.form{
+    margin-bottom: 2rem;
+}
+
+.checkbox{
+    display: flex;
+    margin-top: .5rem;
+    align-items: center;
+    padding: .5rem ;
+}
+
+
+
+.checkbox p{
+    padding-left: .8rem;
+    font-size: 0.875rem;
+}
+

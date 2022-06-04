@@ -1,0 +1,13 @@
+.button{
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    background-color: #794726;
+    padding: .8rem 1.2rem;
+    box-sizing: border-box;
+    width: 100%;
+    color: #fff;
+    border-radius: 125px;
+    margin-top: 3rem;
+}

@@ -1,0 +1,41 @@
+.footer{
+    background-color: #121212;
+    height: 421px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.container_footer{
+    display: grid;
+    max-width: 90%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem ;
+    margin: 0 auto;
+    align-items: baseline;
+    justify-content: end;
+}
+
+@media (max-width: 800px){
+    .footer{
+        width: 100%;
+        height: auto;
+        padding: 2rem 0rem;
+    }
+    .container_footer{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+.contact ul li, .social_midia ul li{
+    padding: .8rem 0;
+
+}
+
+.adress li{
+    width: 70%;
+    line-height: 25px;
+}
