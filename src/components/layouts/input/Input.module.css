@@ -24,5 +24,7 @@
 .label{
     display: block;
     font-size: 1rem;
+    font-weight: 500;
+    color: #6d6d6d;
     padding: 2rem 0 0 0;
 }

@@ -1,0 +1,12 @@
+.ContainerForm{
+    margin: 5rem auto;
+    width: 40rem; 
+    height: auto;
+}
+
+@media (max-width: 800px) {
+    .ContainerForm{
+        width: 100%;
+        padding: 1rem .7rem;
+    }
+}

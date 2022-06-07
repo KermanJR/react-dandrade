@@ -6,7 +6,7 @@
 
 body{
   margin: 0;
-  color: #333;
+  --color-first: #794726;
   --type-first: 'Montserrat', sans-serif;
   font-family: var(--type-first);
   padding-top: 5rem;
@@ -83,5 +83,53 @@ a{
   margin-top: 1rem;
 }
 
+/*class register and login*/
+
+.register{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    min-height: 70vh;
+    width: 40rem;
+    padding-top: 5rem;
+}
+
+@media (max-width: 800px){
+  .register{
+    width: 100%;
+    height: auto;
+    padding: 5rem 1rem;
+  }
+}
 
 
+/*lost password*/
+.lostPassword{
+  display: block;
+  color: var(--color-first);
+  padding-top: 1.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: right;
+}
+
+/*create Account under the button forms*/
+.createAccount{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.createAccount p{
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.createAccount a{
+  font-weight: 700;
+  color: var(--color-first);
+  margin-left: .3rem;
+}

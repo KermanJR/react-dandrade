@@ -1,14 +1,26 @@
 import React from 'react'
-import styles from './RegisterForm.module.css'
-import { Input } from '../forms/Input'
-import { Button } from '../forms/Button'
 import { Link } from 'react-router-dom'
-import { USER_POST } from '../../api/Api'
-import { useForm } from '../../hooks/useForm'
+
+
+/*import components*/
+import { Input } from '../../layouts/input/Input'
+import { Button } from '../../layouts/button/Button'
+
+/*import hooks*/
+import { useForm } from '../../../hooks/useForm'
+
+/*import API ROUTES*/
+import { USER_POST } from '../../../api/Api'
+
+/*import styles*/
+import styles from './LoginInitialCreate.module.css'
+import { Subtitle } from '../../layouts/subtitle/Subtitle'
+import { Title } from '../../layouts/title/Title'
 
 
 
-export const RegisterForm = () => {
+
+export const LoginInitialCreate = () => {
 
     const email = useForm()
     const password = useForm()
@@ -24,12 +36,10 @@ export const RegisterForm = () => {
         console.log(json)
 
     }
-
-
   return (
-    <section className={styles.form}>
-        <span className="span">Passo 1/2</span>
-        <h1 className="title">Crie sua conta</h1>
+    <React.Fragment>
+        <Subtitle>Passo 1/2</Subtitle>
+        <Title>Crie sua conta</Title>
         <form onSubmit={handleSubmit} className={styles.form}>
             <Input 
                 label="Email"
@@ -63,6 +73,6 @@ export const RegisterForm = () => {
                 <Link className="bold" to="/login"> Fazer login</Link>
             </div>
         </form>
-    </section>
+    </React.Fragment>
   )
 }

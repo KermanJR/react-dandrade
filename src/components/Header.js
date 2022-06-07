@@ -6,7 +6,6 @@ import { useMedia } from '../hooks/useMedia'
 import { useLocation } from 'react-router-dom'
 
 import { Link } from 'react-router-dom'
-import { Button } from './forms/Button'
 import { Container } from './Container'
 import { UserHeader, UserHeaderNav } from './user/UserHeader'
 
@@ -26,7 +25,6 @@ export const Header = () => {
   
   return (
     <>
-    {!login &&
       <header className={`${mobile ? styles.headerMobile : styles.header}`}>
           <Container>
               <Link  
@@ -62,12 +60,6 @@ export const Header = () => {
 
           </Container>
       </header>
-      }
-
-      {/*Renderiza Header do Usuário caso o mesmo esteja logado.*/}
-      {login &&
-        <UserHeader/>
-      }
     </>
   )
 }

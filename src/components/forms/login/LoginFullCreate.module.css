@@ -1,0 +1,55 @@
+.cpf_sex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form{
+    border: 1px solid red;
+}
+
+.select {
+    padding-top: 30px;
+}
+
+.select select{
+    width: 100%;
+    padding: 1rem 0;
+    border: none;
+    font-family: var(--type-first);
+    font-size: 1rem;
+    border-bottom: 2px solid #EEEEEE;
+    padding: 1rem 0;
+}
+
+
+
+.select select:focus,
+.select select:active{
+    border-bottom: 2px solid #EEEEEE;
+    outline: none;
+}
+
+.cep_state_city{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 20px;
+}
+
+.adress_number{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+.dateBirthday_phone{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap: 20px;
+}
