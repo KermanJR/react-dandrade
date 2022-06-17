@@ -69,6 +69,21 @@ a{
   font-size: 1rem;
 }
 
+.button{
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  background-color: #794726;
+  padding: .8rem 1.2rem;
+  box-sizing: border-box;
+  width: 100%;
+  color: #fff;
+  letter-spacing: 1px;
+  border-radius: 125px;
+  margin-top: 3rem;
+}
+
 .bold{
   font-weight: bold;
   color: #794726;

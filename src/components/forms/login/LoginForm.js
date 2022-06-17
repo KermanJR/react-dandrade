@@ -15,7 +15,7 @@ export const LoginForm = () => {
         {/*select*/}
         <div className={styles.divSelect}>
             <span>Interesse</span>
-            <select>
+            <select defaultValue="">
                 <option selected disabled>Selecione</option>
                 <option>Requerente</option>
                 <option>Advogado</option>

@@ -24,18 +24,19 @@ export const LoginFullCreate = () => {
         console.log(json)
 
     }
+
   return (
     <React.Fragment>
         <Subtitle>Passo 2/2</Subtitle>
         <Title>Complete o seu cadastro</Title>
         <form onSubmit={handleSubmit}>
-
             <Input 
                 label="Como podemos te chamar?"
                 type="text"
                 name="name"
                 placeholder="Insira seu"
              />
+             
             <div className={styles.cpf_sex}>
                 <Input 
                     label="CPF"
@@ -45,8 +46,9 @@ export const LoginFullCreate = () => {
                  />
                 <Input label="Sexo" type="text" name="sexo" />
             </div>
+
             <div className={styles.select}>
-                <select>
+                <select defaultValue="">
                     <option selected>Interesse</option>
                     <option>Requerente</option>
                     <option>Advogado</option>
@@ -61,19 +63,53 @@ export const LoginFullCreate = () => {
             />
 
             <div className={styles.cep_state_city}>
-                <Input label="CEP" type="text" name="cep" placeholder="Insira"/>
-                <Input label="Estado" type="text" name="state" placeholder="Insira" />
-                <Input label="Cidade" type="text" name="city" placeholder="Insira"/>
+                <Input 
+                    label="CEP"
+                    type="text"
+                    name="cep"
+                    placeholder="Insira"
+                />
+                <Input
+                    label="Estado"
+                    type="text"
+                    name="state"
+                    placeholder="Insira" 
+                />
+                <Input
+                    label="Cidade"
+                    type="text" 
+                    name="city"
+                    placeholder="Insira"
+                />
             </div>
 
             <div className={styles.adress_number}>
-                <Input label="Endereço" type="text" name="address" placeholder="Insira"/>
-                <Input label="N°" type="text" name="number" placeholder="Insira" />
+                <Input 
+                    label="Endereço"
+                    type="text"
+                    name="address"
+                    placeholder="Insira"
+                />
+                <Input label="N°"
+                    type="text"
+                    name="number"
+                    placeholder="Insira"
+                />
             </div>
 
             <div className={styles.dateBirthday_phone}>
-                <Input label="Data de nascimento" type="text" name="date_birthday" placeholder="Insira sua data de nascimento"/>
-                <Input label="Número de telefone" type="text" name="number" placeholder="Insira seu telefone" />
+                <Input 
+                    label="Data de nascimento"
+                    type="text"
+                    name="date_birthday"
+                    placeholder="Insira sua data de nascimento"
+                />
+                <Input
+                    label="Número de telefone"
+                    type="text"
+                    name="number"
+                    placeholder="Insira seu telefone"
+                />
             </div>
 
             

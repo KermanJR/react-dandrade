@@ -46,10 +46,24 @@
     color: #fff;
     background-color: #794726;
     display: flex;
+    width: 96px;
+    height: 35px;
     align-items: center;
     margin: 0 auto;
     padding: .8rem 1.2rem;
     border-radius: 1.5rem;
+}
+
+.contact .contactUs::after{
+    content: '';
+    display: block;
+    background: url('../../assets/icons/out-icon.png') center center;
+    width: 50px;
+    height: 15px;
+    background-position-x: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
 }
 
 /*Header mobile user*/

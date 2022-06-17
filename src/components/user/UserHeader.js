@@ -4,12 +4,14 @@ import Logo from '../../assets/Logo.png'
 
 import { Link, useLocation } from 'react-router-dom'
 import { useMedia } from '../../hooks/useMedia'
+import { UserContext, UserStorage } from '../../context/UserContext'
 
 
 export const UserHeader = () => {
 
     const [mobileMenu, setMobileMenu] = React.useState(null)
     const mobile = useMedia('(max-width: 40rem)')
+    const {login, userLogout} = React.useContext(UserContext)
 
     const {pathname} = useLocation()
 
@@ -28,7 +30,7 @@ export const UserHeader = () => {
 
                     <div className={styles.contact}>
                         <Link className={styles.myAccount} to="/minhaconta">Minha Conta</Link>
-                        <Link className={styles.contactUs} to="/contato">Fale conosco</Link>
+                        <Link className={styles.contactUs} to="/login" onClick={userLogout}>Sair</Link>
                     </div>
                 </header>
             }
@@ -49,7 +51,7 @@ export const UserHeader = () => {
                     
                     <div className={`${styles.navMobile}  ${mobileMenu && styles.navMobileActive}`}>
                         <Link className={styles.myAccount} to="/minhaconta">Minha Conta</Link>
-                        <Link className={styles.contactUs} to="/contato">Fale conosco</Link>
+                        <Link className={styles.contactUs} to="/login">Sair</Link>
                     </div>
                 </header> 
                 

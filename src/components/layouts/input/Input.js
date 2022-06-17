@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './Input.module.css'
-export const Input = ({label, type, name, value, onChange, onBlur, placeholder}) => {
+import { ReactPropTypes } from 'react'
+
+export const Input = ({label, type, name, value, onChange, onBlur, placeholder, props}) => {
   return (
     <section className={styles.wrapper}>
         <label className={styles.label}>{label}</label>
@@ -16,5 +18,9 @@ export const Input = ({label, type, name, value, onChange, onBlur, placeholder})
         />
 
     </section>
+
   )
+
+
+
 }

@@ -1,0 +1,44 @@
+form{
+    padding-bottom: 2rem;
+}
+
+.myAccount{
+   width: 40rem;
+   margin: 0 auto; 
+   padding-top: 7rem;
+   padding-bottom: 7rem;
+}
+.editBlock{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(228, 228, 228);
+}
+
+.editBlock p{
+    font-weight: 600;
+}
+
+.editBlock button{
+    height: 20px;
+    background-color: #fff;
+    border: none;
+    color: #794726;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: right;
+}
+
+.editBlock input{
+    text-align: left;
+    border: none;
+    padding: 1rem;
+    margin: none;
+}
+
+.editBlock input:disabled{
+    background-color: #fff;
+}
+
+

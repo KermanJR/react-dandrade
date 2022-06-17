@@ -1,7 +1,8 @@
 .ContainerForm{
     margin: 5rem auto;
-    width: 40rem; 
+    width: 40rem;
     height: auto;
+
 }
 
 @media (max-width: 800px) {

@@ -1,4 +1,5 @@
 export const API_URL = 'https://localhost:5000' 
+export const URL = 'https://dandrade.com.br'
 
 export function USER_POST(body){
     return{

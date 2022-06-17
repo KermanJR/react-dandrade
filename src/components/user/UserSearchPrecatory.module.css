@@ -1,0 +1,110 @@
+.searchPrecatory{
+    width: 71rem;
+    margin: 0 auto;
+    text-align: left;
+    padding: 7rem 0;
+}
+
+
+.searchPrecatory p,
+.searchPrecatory h1{
+    text-align: left;
+}
+
+.formSearchPrecatory{
+    display: grid;
+    grid-template-columns: 1fr 1fr .5fr .5fr 1fr;
+    grid-gap: 40px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.formSearchPrecatory div{
+    width: 100%;
+    align-self: center;
+
+}
+
+
+.select{
+    margin-top: 1.5rem;
+}
+
+.select label{
+    font-size: 1rem;
+    color: #6d6d6d;
+    font-weight: 500;
+}
+
+.select select{
+    width: 100%;
+
+    border: none;
+    font-family: var(--type-first);
+    font-size: 1rem;
+    border-bottom: 2px solid #EEEEEE;
+    padding: 1rem 0;
+}
+
+
+
+.select select:focus,
+.select select:active{
+    border-bottom: 2px solid #EEEEEE;
+    outline: none;
+}
+
+/*Section Offer*/
+.sectionOffer{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    background-color: #f6f8f4;
+    text-align: center;
+    position: relative;
+    top: 0;
+}
+
+.divOffer{
+    display: grid;
+    padding: 1.5rem;
+    background: #fff;
+    grid-template-columns: .5fr 20fr;
+    grid-gap: 10px;
+    align-items: center;
+    border: 1px solid #D3D3D3;  
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.08);
+}
+
+.divOffer p,
+.divOffer a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #794726;
+}
+
+.divOffer a{
+    border-bottom: 1px solid #794726;
+}
+
+@media (max-width: 40rem){
+    .formSearchPrecatory{
+        grid-template-columns: 1fr;
+    }
+
+    .searchPrecatory{
+        width: 100%;
+        padding: 4rem .725rem;
+    }
+
+    .sectionOffer{
+        margin-top: 0px;
+    }
+}
+
+

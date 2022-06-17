@@ -8,11 +8,16 @@ import { useLocation } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import { Container } from './Container'
 import { UserHeader, UserHeaderNav } from './user/UserHeader'
+import { UserContext } from '../context/UserContext'
+
+import { URL } from '../api/Api'
 
 export const Header = () => {
 
   const [mobileMenu, setMobileMenu] = React.useState(null)
   const mobile = useMedia('(max-width: 40rem)')
+
+  const {login, userLogout} = React.useContext(UserContext)
 
   const {pathname} = useLocation()
 
@@ -21,11 +26,10 @@ export const Header = () => {
   },[pathname])
 
 
-  var login = false;
   
   return (
     <>
-      <header className={`${mobile ? styles.headerMobile : styles.header}`}>
+      {!login && <header className={`${mobile ? styles.headerMobile : styles.header}`}>
           <Container>
               <Link  
                   className={styles.logo}
@@ -35,11 +39,11 @@ export const Header = () => {
               </Link>
 
               <nav className={`${mobile? styles.navMobile: styles.nav} ${mobileMenu && styles.navMobileActive}`}>
-                  <Link to="/">Início</Link>
-                  <Link to="/precatorios">Cenário dos precatórios</Link>
-                  <Link to="/sobre-nos">Sobre nós</Link>
-                  <Link to="/contato">Contato</Link>
-                  <Link to="/noticias">Notícias</Link>
+                  <Link to={`${URL}/home`}>Início</Link>
+                  <Link to={`${URL}/precatorios-dandrade/`}>Cenário dos precatórios</Link>
+                  <Link to={`${URL}/sobre-nos/`}>Sobre nós</Link>
+                  <Link to={`${URL}/contato`}>Contato</Link>
+                  <Link to={`${URL}/home`}>Notícias</Link>
                   
               </nav>
 
@@ -59,8 +63,10 @@ export const Header = () => {
               
 
           </Container>
-      </header>
-    </>
+      </header>}
+
+      {login && <UserHeader/>}
+    </> 
   )
 }
 
